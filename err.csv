@@ -1,0 +1,537 @@
+code_ifree;;Description;ETK_Spamm;USI;Silverstreet;infobip;K-cell;SMARTS;GMSU_UA_GATE;MTS_BY;BeeGate;Velcom_Spam;error_type
+127;;не пришел деливер;;;;;;;;;;;
+1;;Message Length is invalid;;;;;;;;;;;resp_command_status
+2;;Command Length is invalid;;;;;;;;;;;resp_command_status
+3;;Invalid Command ID;;;;;;;;;;;resp_command_status
+8;;System Error;;;;;;;;;;;resp_command_status
+10;;Invalid Source Address;;;;;;;;;;;resp_command_status
+11;;Invalid Dest Addr;;;;;;;;;;;resp_command_status
+14;;Message Queue Full;;;;;;;;;;;resp_command_status
+15;;Invalid Service Type;;;;;;;;;;;resp_command_status
+33;;Invalid number of destinations;;;;;;;;;;;resp_command_status
+43;;Invalid esm_class field data;;;;;;;;;;;resp_command_status
+45;;submit_sm or submit_multi failed;;;;;;;;;;;resp_command_status
+48;;Invalid Source address TON;;;;;;;;;;;resp_command_status
+49;;Invalid Source address NPI;;;;;;;;;;;resp_command_status
+50;;Invalid Destination address TON;;;;;;;;;;;resp_command_status
+51;;Invalid Destination address NPI;;;;;;;;;;;resp_command_status
+53;;Invalid system_type field;;;;;;;;;;;resp_command_status
+55;;Invalid number of messages;;;;;;;;;;;resp_command_status
+58;;Throttling error;;;;;;;;;;;resp_command_status
+61;;Invalid Scheduled Delivery Time;;;;;;;;;;;resp_command_status
+62;;Invalid message validity period;;;;;;;;;;;resp_command_status
+194;;Invalid Parameter Length.;;;;;;;;;;;
+255;;Unknown Error;;;;;;;;;;;
+501;;таймаут (нет ответа от HLR) ;#DIV/0!;261890/229376;;;;;;;;;deliver_sm
+502;;таймаут (нет ответа от MSC);#DIV/0!;8/229377/261889;;;;;;;;;deliver_sm
+503;;нет ресурсов на SMSC ;11/0/0;;;;;;;;;;deliver_sm
+504;;несуществующий абонент ;12.01.2000;;;;;;;;;;deliver_sm
+505;;неверный MSC (временная ошибка перерегистрации абонента);12.05.2000;;;;;;;;;;deliver_sm
+506;;нет услуги SMS у абонента ;12.09.2000;199424;11;11;;;;;;;deliver_sm
+507;;нет услуги SMS у абонента, или абонент блокирован ;12.11.2000;;;;;;;;;;deliver_sm
+508;;нет услуги SMS у абонента ;12.12.2000;;;;;;;;;;deliver_sm
+509;;абонент блокирован, или в роуминге с недоступной услугой роуминга ;12/13/0;;;;;;;;;;deliver_sm
+510;;нет услуги SMS у абонента ;12/21/0;;;;;;;;;;deliver_sm
+511;;абонент недоступен уже долгое время или аппарат выключен ;12/27/0;;;;;;;;;;deliver_sm
+512;;абонент в условиях плохой связи или сейчас недоступен ;12/27/1;;;;;;;;;;deliver_sm
+513;;аппарат абонента не может принять SMS (сбой или сеть занята;12/31/0;;;;;;;;;;deliver_sm
+514;;аппарат абонента не может принять SMS (нет места для новых SMS;12/32/0;1029/204800;;;;;;;;;deliver_sm
+515;;аппарат абонента не может принять SMS (сбой аппарата;12/32/1;;;;;;;;;;deliver_sm
+516;;аппарат абонента не может принять SMS (сбой или сеть занята;12/34/0;;;;;;;;;;deliver_sm
+517;;иная ошибка MAP GSM - см спецификацию GSM для подробностей ;12/xx/x;;;;;;;;;;deliver_sm
+518;;получен SCCP/TCAP ABORT ;13/0/0;232960/232704;;;;;;;108;;deliver_sm
+519;;ошибка при доставке с флагом MMS либо ABORT доставки ;14/0/0;;;;;;;;;;deliver_sm
+520;;нет ресурсов на SMSC ;15/0/0;;;;;;;;;;deliver_sm
+521;;SMS устарела ;16/0/0;;;;;;;;;;deliver_sm
+522;;SMS удалена ;17/0/0;;;;;;;;;;deliver_sm
+523;;SMS удалена - ошибка доставки ;18/0/0;;;;;;;;;;deliver_sm
+524;;SMS удалена - SMPP недоступен ;19/0/0;;;;;;;;;;deliver_sm
+525;;Закончилась память на телефоне ;;;2;256;;;;;;;deliver_sm
+526;;Equipment protocol error;;;3;257;;191;;;;;deliver_sm
+527;;Equipment not equipped with short-message capability;;;4;258;;192;;;122;;deliver_sm
+528;;Unknown service centre (destination MSC);;;5;259;;193;;;;3;deliver_sm
+529;;Service centre congestion (Too much inbound traffic at destination network);;;6;260;;194;;;;;deliver_sm
+530;неверный адрес SME;Invalid SME address;;;7;261;;;;;;;deliver_sm
+531;номер принадлежит к другой сети, но HLR не обновлена;Subscriber is not a SC subscriber (Number belongs to a different destination network but HLR is not updated);;;8;262;;196;;;;;deliver_sm
+532;неизвестный IMSI;Unknown subscriber (IMSI is unknown in the HLR);;;9;1;;1;1;;1;1;deliver_sm
+533;не аутентифицированный абонент;Illegal subscriber (The mobile station failed authentication) абонент не прошёл авторизацию в сети;;198912/1104;10;9;;9;;;9;9;deliver_sm
+534;;Resource limitation at peer / destination network;;;20;;;;;;;;deliver_sm
+535;;Illegal equipment (IMEI check failed, blacklisted or not whitelisted)  Оборудование пользователя не прошло проверку в EIR.;;199680/205319;12;12;;;;;;12;deliver_sm
+536;;Call barred (Operator barred the MSISDN number);;199936;13;13;;13;13;;13;13;deliver_sm
+537;;Facility not supported (VLR in the PLMN does not support MT short message service);;201984;14;21;;21;;;21;21;deliver_sm
+538;;Subscriber busy for MT short message;;1040/204544;15;31;;31;;;15;31;deliver_sm
+539;;System failure Сбой системы;;205312/205316/205313;16;34;;34;;;18;34;deliver_sm
+540;;Message waiting list at HLR is full;;;17;33;;;;;;;deliver_sm
+541;;Data missing;;205568;18;35;;35;;;;35;deliver_sm
+542;;Unexpected data value;;205824;19;36;;36;;;;36;deliver_sm
+543;;Unidentified subscriber;;197888;30;5;;;;;;;deliver_sm
+544;;TCAP error (Duplicate invoke ID);;;21;509;;;;;;;deliver_sm
+545;;TCAP error (Not supported service);;;22;508;;;;;;;deliver_sm
+546;;TCAP error (Mistyped parameter);;;23;507;;;;;;;deliver_sm
+547;;TCP error (Resource Limitation);;;24;;;;;;;;deliver_sm
+548;;TCAP error (TCAP initiating release);;;25;511;;;;;142;;deliver_sm
+549;;TCAP error (Unexpected response from peer);;;26;504;;;;;;;deliver_sm
+550;;TCAP error (Service completion failure);;;27;503;;;;;;;deliver_sm
+551;;TCAP error (No response from peer);;;28;502;;;;;;;deliver_sm
+552;;TCAP error (Invalid response received);;;29;;;;;;;;deliver_sm
+553;;Сбой доставки (Delivery fail);;;35;32;;32;;;;32;deliver_sm
+554;;PLMN system failure;;;37;;;;;;100;;deliver_sm
+555;;HLR system failure;;205314;38;;;;;;;;deliver_sm
+556;;VLR system failure;;205315;39;;;;;;102;;deliver_sm
+557;;Отмена доставки всвязи с истечением validity period'а;;;67;4101;;;;;;;deliver_sm
+558;;неверный формат пакета (invalid PDU Format );;;81;4096;;;;;;;deliver_sm
+559;;Absent subscriber IMSI detached;;203521/203521;97;6;;27;;;54;;deliver_sm
+560;;Controlling MSC failure (Error in the MSC where the user is located);;;40;;;;;;;;deliver_sm
+561;;Visited MSC failure (Error in the visited MSC);;;41;;;;;;;;deliver_sm
+562;;MNP other operator not allowed (MSISDN is ported, delivery via this SMSC not permitted);;;42;;;;;;;;deliver_sm
+563;;Subscriber temporarily unreachable (While roaming);;;43;;;;;;;;deliver_sm
+564;;Message store busy;;;44;;;;;;;;deliver_sm
+565;;SME Interface busy;;;45;;;;;;;;deliver_sm
+566;;Closed user group reject;;;46;;;;;;;;deliver_sm
+567;;Network failure;;;47;;;;;;;;deliver_sm
+568;;Deferred Delivery (Message has not been delivered and is part of a deferred delivery schedule);;;48;;;;;;;;deliver_sm
+569;;Error getting route;;;49;;;;;;;;deliver_sm
+570;;Insufficient credit;;;50;;;;;;;;deliver_sm
+571;;Rejected Destination;;;51;;;;;;;;deliver_sm
+572;;Rejected Unknown Reason;;;52;;;;;;;;deliver_sm
+573;;Rejected due to routing issue;;;53;;;;;;;;deliver_sm
+574;;Rejected due to blocking issue;;;54;;;;;;;;deliver_sm
+575;;Rejected due to no price;;;55;;;;;;;;deliver_sm
+576;;Rejected due to not enough credits;;;56;;;;;;;;deliver_sm
+577;;Rejected due to spam filter;;;57;;;;;;;;deliver_sm
+578;;Rejected due to flooding;;;58;;;;;;;;deliver_sm
+579;;UNKNOWN TCType,SMS;;;59;;;;;;;;deliver_sm
+580;;UNKNOWN TCType,SRI;;;60;;;;;;;;deliver_sm
+581;;UNKNOWN;;;61;;;;;;;;deliver_sm
+582;;Failure due to submission towards AA19 destination;;;62;;;;;;;;deliver_sm
+583;;Sent to SME but unable to confirm;;;63;;;;;;;;deliver_sm
+584;;Replaced at the SMSC;;;64;;;;;;;;deliver_sm
+585;;Quality service not available;;;65;;;;;;;;deliver_sm
+586;;Error in SMSC;;204802;66;;;;;;;;deliver_sm
+587;;Intermediate state notification that the message has not yet been delivered due to a phone related problem but is being retried.;;;68;;;;;;;;deliver_sm
+588;;Cannot determine whether this message has been delivered or has failed due to lack of final delivery state information from the operator.;;;69;;;;;;;;deliver_sm
+589;;Specific content is not permitted on the network / shortcode;;;70;;;;;;;;deliver_sm
+590;;Subscriber cannot receive adult content because of a parental lock;;;71;;;;;;;;deliver_sm
+591;;Failure due to ported combinations being unreachable.;;;72;;;;;;;;deliver_sm
+592;;Roaming subscriber.;;;73;;;;;;;;deliver_sm
+593;;Failure due to ported combinations being blocked for client (Client has been blacklisted from the ported destination).;;;74;;;;;;;;deliver_sm
+594;;Abort from HLR;;;75;;;;;;;;deliver_sm
+595;;Source address is blacklisted or not supported;;;76;;;;;;;;deliver_sm
+596;;Operation barred;;;77;;;;;;;;deliver_sm
+597;;Facility not provided;;;78;;;;;;;;deliver_sm
+598;;Invalid absolute validity period;;;79;;;;;;;;deliver_sm
+599;;SMS center received;;;80;;;;;;;;deliver_sm
+600;;Local Cancel (Temporary problem / Lost reach);;;82;;;;;;;;deliver_sm
+601;;Rejected due to duplicate;;;83;;;;;;;;deliver_sm
+602;;Maximum Connection Reached;;;84;;;;;;;;deliver_sm
+603;;Information Not Available;;;85;;;;;;;;deliver_sm
+604;;Message waiting list full;;;86;;;33;;;;33;deliver_sm
+605;;Short Term Denial;;;87;;;;;;;29;deliver_sm
+606;;message replaced by SMSC;;;89;;;;;;;;deliver_sm
+607;;congestion at subscriber;;;90;;;;;;;;deliver_sm
+608;;service rejected;;255;91;;;;;;;;deliver_sm
+609;;Error in SME;;;92;;;;;;;;deliver_sm
+610;;Remote procedure error;;;93;;;;;;;;deliver_sm
+611;;Connection rejected by SME;;;94;;;;;;;;deliver_sm
+612;;SM deleted by the sender;;;95;;;;;;;;deliver_sm
+613;;SM deleted by SMSC Admin;;;96;;;;;;;;deliver_sm
+614;;SMS malformed;;;98;;;;;;;;deliver_sm
+615;;DCS inconsistency;;;99;;;;;;;;deliver_sm
+616;;Max submission attempt reached ;;;100;;;;;;;;deliver_sm
+617;;Max Time To Live for message reached ;;;101;;;;;;;;deliver_sm
+618;;No response from SME ;;;102;;;;;;;;deliver_sm
+619;;Max submission attempt reached (finalised before validity period expired) ;;;103;;;;;;;;deliver_sm
+620;;Max TTL for message reached (finalised when validity period expired) ;;;104;;;;;;;;deliver_sm
+621;;Portability error;;;105;;;;;;;;deliver_sm
+622;;Canceled at SMSC;;;106;;;;;;;;deliver_sm
+623;;PSMS checksum error;;;200;;;;;;;;deliver_sm
+624;;PSMS syntax error;;;201;;;;;;;;deliver_sm
+625;;PSMS operatorion not supported by system;;;202;;;;;;;;deliver_sm
+626;;PSMS operation not allowed;;;203;;;;;;;;deliver_sm
+627;;PSMS call barring active;;;204;;;;;;;;deliver_sm
+628;;PSMS number blacklisted for shortcode;;;205;;;;;;;;deliver_sm
+629;;PSMS ADC invalid;;;206;;;;;;;;deliver_sm
+630;;PSMS legitimisation code for repition, failure;;;207;;;;;;;;deliver_sm
+631;;PSMS priority call not allowed;;;208;;;;;;;;deliver_sm
+632;;PSMS urgent message not allowed;;;209;;;;;;;;deliver_sm
+633;;PSMS reverse charging not allowed;;;210;;;;;;;;deliver_sm
+634;;PSMS deferred delivery not allowed;;;211;;;;;;;;deliver_sm
+635;;PSMS time period not valid;;;212;;;;;;;;deliver_sm
+636;;PSMS message type not supported by system;;;213;;;;;;;;deliver_sm
+637;;PSMS message too long;;;214;;;;;;;;deliver_sm
+638;;PSMS message not found in smsc;;;215;;;;;;;;deliver_sm
+639;;PSMS PID already in use;;;216;;;;;;;;deliver_sm
+640;;PSMS delivery in progress;;;217;;;;;;;;deliver_sm
+641;;PSMS message forwarded;;;218;;;;;;;;deliver_sm
+642;;PSMS low balance;;;219;;;;;;;;deliver_sm
+643;;PSMS delivery fail;;;220;;;;;;;;deliver_sm
+644;;PSMS maximum amount exceeded;;;221;;;;;;;;deliver_sm
+645;;PSMS fatal billing error;;;222;;;;;;;;deliver_sm
+646;;PSMS billing error;;;223;;;;;;;;deliver_sm
+647;;PSMS billing not possible;;;224;;;;;;;;deliver_sm
+648;;PSMS message expired;;;225;;;;;;;;deliver_sm
+649;;PSMS operation barred;;;226;;;;;;;;deliver_sm
+650;;PSMS SC congestion;;;227;;;;;;;;deliver_sm
+651;;PSMS facility not supported;;;228;;;;;;;;deliver_sm
+652;;PSMS protocol error;;;229;;;;;;;;deliver_sm
+653;;PSMS system error;;;230;;;;;;;;deliver_sm
+654;;PSMS barred subscriber disconnected;;;231;;;;;;;;deliver_sm
+655;;PSMS barred subscriber low balance;;;232;;;;;;;;deliver_sm
+656;;PSMS barred subscriber credit risk or security risk;;;233;;;;;;;;deliver_sm
+657;;PSMS barred subscriber content not allowed;;;234;;;;;;;;deliver_sm
+658;;PSMS originator adress not allowed;;;235;;;;;;;;deliver_sm
+659;;PSMS Unknown subscriber;;196864;236;;;;;;;;deliver_sm
+660;;Absent subscriber (network cannot contact subscriber) (абонент недоступен);;203520/11/198144;1;27;;;27;;;;deliver_sm
+661;;EC_PROVIDER_GENERAL_ERROR;;;;500;;;;;;;deliver_sm
+662;;EC_OR_appContextNotSupported;;;;1024;;;;;;;deliver_sm
+663;;EC_OR_invalidDestinationReference;;;;1025;;;;;;;deliver_sm
+664;;EC_OR_invalidOriginatingReference;;;;1026;;;;;;;deliver_sm
+665;;EC_OR_encapsulatedAC_NotSupported;;;;1027;;;;;;;deliver_sm
+666;;EC_OR_transportProtectionNotAdequate;;;;1028;;;;;;;deliver_sm
+667;;EC_OR_potentialVersionIncompatibility;;;;1030;;;;;;;deliver_sm
+668;;EC_OR_remoteNodeNotReachable;;;;1031;;;;;;;deliver_sm
+669;;EC_NNR_noTranslationForAnAddressOfSuchNatur;;;;1152;;200;;;;;deliver_sm
+670;;EC_NNR_noTranslationForThisSpecificAddress;;;;1153;;201;;;;;deliver_sm
+671;;EC_NNR_subsystemCongestion;;;;1154;;202;;;;;deliver_sm
+672;;EC_NNR_subsystemFailure;;;;1155;;203;;;;;deliver_sm
+673;;EC_NNR_unequippedUser;;;;1156;;204;;;78;;deliver_sm
+674;;EC_NNR_MTPfailure;;;;1157;;205;;;;;deliver_sm
+675;;EC_NNR_networkCongestion;;;;1158;;206;;;80;;deliver_sm
+676;;EC_NNR_unqualified;;;;1159;;207;;;;;deliver_sm
+677;;EC_NNR_errorInMessageTransportXUDT;;;;1160;;208;;;82;;deliver_sm
+678;;EC_NNR_errorInLocalProcessingXUDT;;;;1161;;209;;;;;deliver_sm
+679;;EC_NNR_destinationCannotPerformReassemblyXUDT;;;;1162;;210;;;;;deliver_sm
+680;;EC_NNR_SCCPfailure;;;;1163;;211;;;;;deliver_sm
+681;;EC_NNR_hopCounterViolation;;;;1164;;212;;;;;deliver_sm
+682;;EC_NNR_segmentationNotSupported;;;;1165;;213;;;;;deliver_sm
+683;;EC_NNR_segmentationFailure;;;;1166;;214;;;;;deliver_sm
+684;;EC_UA_userSpecificReason;;;;1281;;;;;;;deliver_sm
+685;;EC_UA_userResourceLimitation;;;;1282;;;;;;;deliver_sm
+686;;EC_UA_resourceUnavailable;;;;1283;;;;;;;deliver_sm
+687;;EC_UA_applicationProcedureCancellation;;;;1284;;;;;;;deliver_sm
+688;;EC_PA_providerMalfunction;;;;1536;;;;;;;deliver_sm
+689;;EC_PA_supportingDialogOrTransactionRealeased;;;;1537;;;;;;;deliver_sm
+690;;EC_PA_ressourceLimitation;;;;1538;;;;;;;deliver_sm
+691;;EC_PA_maintenanceActivity;;;;1539;;;;;;;deliver_sm
+692;;EC_PA_versionIncompatibility;;;;1540;;;;;;;deliver_sm
+693;;EC_PA_abnormalMapDialog;;;;1541;;;;;;;deliver_sm
+694;;EC_NC_responseRejectedByPeer;;;;1793;;;;;;;deliver_sm
+695;;EC_NC_abnormalEventReceivedFromPeer;;;;1794;;;;;;;deliver_sm
+696;;C_NC_messageCannotBeDeliveredToPeer;;;;1795;;;;;;;deliver_sm
+697;;EC_NC_providerOutOfInvoke;;;;1796;;;;;;;deliver_sm
+698;;EC_UNKNOWN_ALPHABET;;;;71;;;;;;71;deliver_sm
+699;;EC_USSD_BUSY;;;;72;;;;;;;deliver_sm
+700;;EC_TIME_OUT;;;;2048;;;;;;;deliver_sm
+701;;EC_IMSI_BLACKLISTED;;;;2049;;;;;;;deliver_sm
+702;;EC_NotSubmittedToGMSC;;;;4097;;;;;;;deliver_sm
+703;;EC_Cancelled;;;;4100;;;;;;;deliver_sm
+704;;EC_NotSubmittedToSmppChannel;;;;4102;;;;;;;deliver_sm
+705;;EC_DEST_ADDRESS_BLACKLISTED;;;;2050;;;;;;;deliver_sm
+706;;EC_InvalidMscAddress;;;;2051;;;;;;;deliver_sm
+707;;Invalid Tariff ID value;;;;;1060;;;;;;deliver_sm
+708;;Invalid Extension Value;;;;;1072;;;;;;deliver_sm
+709;;Extension Value Not Allowed (Out of Range);;;;;1073;;;;;;deliver_sm
+710;;Invalid Application Id Value;;;;;1077;;;;;;deliver_sm
+711;;Application with Id not found;;;;;1078;;;;;;deliver_sm
+712;;Invalid Correlation Id Value;;;;;1104;;;;;;deliver_sm
+713;;Correlation Id size is invalid;;;;;1105;;;;;;deliver_sm
+714;;Correlation Id not found;;;;;1106;;;;;;deliver_sm
+715;;Destination address in screening list;;;;;1107;;;;;;deliver_sm
+716;;Source address in screening list;;;;;1108;;;;;;deliver_sm
+717;;Destination address routing failure, check routing tables;;;;;1109;;;;;;deliver_sm
+718;;Application has no active session;;;;;1110;;;;;;deliver_sm
+719;;Prepaid subscriber has insufficient credit for request;;;;;1111;;;;;;deliver_sm
+720;;Invalid interface version in BIND request (not 0x34);;;;;1025;;;;;;deliver_sm
+721;;Invalid Type of Number value;;;;;1026;;;;;;deliver_sm
+722;;Invalid Numbering Plan Identifier value;;;;;1027;;;;;;deliver_sm
+723;;Invalid ESME Type of Number value;;;;;1028;;;;;;deliver_sm
+724;;Invalid ESME Numbering Plan Identifier value;;;;;1029;;;;;;deliver_sm
+725;;Invalid Address Range value in BIND request;;;;;1030;;;;;;deliver_sm
+726;;Invalid ESME Address value;;;;;1031;195;;;;;deliver_sm
+727;;Invalid Protocol Identifier value;;;;;1032;;;;;;deliver_sm
+728;;Invalid Priority Flag value;;;;;1033;;;;;;deliver_sm
+729;;Superseded on 5.0;;;;;1034;;;;;;deliver_sm
+730;;Invalid Short Message Length value;;;;;1035;;;;;;deliver_sm
+731;;Invalid Short Message value;;;;;1036;;;;;;deliver_sm
+732;;Invalid Parameter value or size;;;;;1037;;;;;;deliver_sm
+733;;Invalid Message Status value;;;;;1038;;;;;;deliver_sm
+734;;Invalid Date format;;;;;1039;;;;;;deliver_sm
+735;;Invalid Error Code value;;;;;1040;;;;;;deliver_sm
+736;;Invalid Sequence Number value;;;;;1041;;;;;;deliver_sm
+737;;License limit reached;;;;;1056;;;;;;deliver_sm
+738;;Remote Timeout;;;;;1057;;;;;;deliver_sm
+739;;Messaging Gateway Application or whole Messaging Gateway exceeds allowed license limit. Check related Application License MO increase if possible;;;;;1058;;;;;;deliver_sm
+740;;Messaging Gateway for some reason could not get a successful response from Charging Engine;;;;;1059;;;;;;deliver_sm
+741;;(MOBILE_EQUIP_NOT_SUPP) аппарат абонента не поддерживает данную функцию;;1073;;;;;;;;;deliver_sm
+742;Низкий уровень совместимости с оборудованием абонента;переполнена очередь на абонента;;233728/262164;;;;;;;;;deliver_sm
+743;;SMS_LOWER_LAYER_CAPABILITIES_NOT_PROV;;204801;;;;;;;;;deliver_sm
+744;доставка не может быть выполнена из-за системных проблем (например, проблем взаимодействия двух сетевых элементов), возникших в гостевом MSC.;SYSTEM_FAILURE_VMSC;;205318;;;;;;;;;deliver_sm
+745;абонент отсутствует, - MS выключена и отмечена в VLR как detached.;ABSENT_SUBSCRIBER_IMSI_DETACH;;203521;;;;;;;;;deliver_sm
+746;абонент отсутствует, роуминг в текущей зоне обслуживания запрещён.;ABSENT_SUBSCRIBER_RESTRICTED_AREA;;203522;;;;;;;;;deliver_sm
+747; не может быть выполнена из-за системных проблем, возникших в промежуточном MSC;SYSTEM_FAILURE_CONTROLLING_MSC;;205317;;;;;;;104;;deliver_sm
+748; не может быть выполнена из-за системных проблем, возникших в радиоподсистеме.;SYSTEM_FAILURE_RSS;;205320;;;;;;;;;deliver_sm
+749; специфичная ошибка;ESME_VSEXPIRED;;263172;;;;;;;;;deliver_sm
+750; специфичная ошибка;ESME_RSYSERR;;262152;;;;;;;;;deliver_sm
+751;Абонент не подписан на услугу входящих SMS;TELESERVICE_NOT_PROVISIONED;;199424;;;;11;;;11;11;deliver_sm
+752; специфичная ошибка;ESME_VSTIMEOUT;;263168;;;;;;;;;deliver_sm
+753;;Transaction Abort;;;;;;199;;;;;deliver_sm
+754;;REJECTED _ MTS_BY only;;;;;;;;11;;;deliver_sm
+755;;EXPIRED MTS_BY only;;;;;;;;8;;;deliver_sm
+756;;   0x06 = absentSubscriberSM + 0x04 = MS purged for non GPRS;;;;;;;;;57;;deliver_sm
+757;;   0x06 = absentSubscriberSM  + 0x03 = Deregistered in HLR for non GPRS;;;;;;;;;56;;deliver_sm
+758;;   0x06 = absentSubscriberSM  + 0x02 = roaming-restriction;;;;;;;;;55;;deliver_sm
+759;;   0x06 = absentSubscriberSM + 0x00 = no-paging-response-via-the-MSC;;;;;;;;;53;;deliver_sm
+760;;   No Translation for this specific address ;;;;;;;;;75;;deliver_sm
+761;;   0x22 = Memory Capacity Exceeded;;;;;;;;;120;;deliver_sm
+762;;   0x13 = callBarred + 0x00 = barringServiceActive;;;;;;;;;130;;deliver_sm
+763;;   0x27 = absentSubscriberSM MWD status;;;;;;;;;23;;deliver_sm
+764;;   ошибка No Translation for an address of such nature;;;;;;;;;74;;deliver_sm
+765;;   0x06 = absentSubscriberSM + параметре MWD status задан флаг Mobile subscriber Not Reachable Flag (MNRF);;;;;;;;;3;;deliver_sm
+766;;   0x05 = unidentifiedSub;;;;;;;;;4;5;deliver_sm
+767;;   0x27 = absentSubscriberSM ;;;;;;;;;27;27;deliver_sm
+768;;   0x05 = unidentifiedSub MWD status, где указан статус Mobile subscriber Not Reachable Flag (MNRF);;;;;;;;;62;;deliver_sm
+769;;   MTP failure транспортного уровня SCCP;;;;;;;;;79;;deliver_sm
+770;;   Unqualified транспортного уровня SCCP;;;;;;;;;81;;deliver_sm
+771;;   0x34 = systemFailure Network resources имеет значение MSC;;;;;;;;;104;;deliver_sm
+772;;   MAP-user-abort с User reason, отвечающем resource limitation (congestion);;;;;;;;;115;;deliver_sm
+773;;   0x32 = sm-DeliveryFailure с причиной MS protocol error;;;;;;;;;121;;deliver_sm
+774;;"   сообщение ABORT без указания (или с указанием несоответствующего значения) ""Abort reason"") транзакционного уровня TCAP";;;;;;;;;127;;deliver_sm
+775;;   P-Abort cause = Resource Limitation транзакционного уровня TCAP ;;;;;;;;;129;;deliver_sm
+776;;   0x31 = subscriberBusyForMT-SMS с указанным параметром gprsConnectionSuspended;;;;;;;;;52;;deliver_sm
+777;;   MTP failure транспортного уровня SCCP;;;;;;;;;77;;deliver_sm
+778;;   HLR Пользователя возвращает MAP_SEND_ROUTING_INFO_FOR_SM_Resp некорректного содержания/формата;;;;;;;;;134;;deliver_sm
+779;;   HLR Пользователя не возвращается (или возвращается после окончания периода ожидания) MAP_SEND_ROUTING_INFO_FOR_SM_Resp;;;;;;;;;136;;deliver_sm
+780;;   unrecognised operation;;;;;;;;;139;;deliver_sm
+781;;   0x32 = sm-DeliveryFailure с причиной invalidSME-Address;;;;;;;;;144;;deliver_sm
+782;;   0x22 = Memory Capacity Exceeded  с заданным параметром diagnosticInfo;;;;;;;;;158;;deliver_sm
+783;;   HLR Пользователя возвращается “завершающий” Return Result (Last) транзакционного уровня TCAP без указания дополнительных информационных элементов. ;;;;;;;;;161;;deliver_sm
+784;;   0x27 = absentSubscriberSM;;;;;;;;;180;;deliver_sm
+785;;   (передача HLRу Пользователя результата попытки отправки SMS сообщения) возвращается ошибка – отвержение MAP-P-ABORT с причиной Abnormal MAP dialogue;;;;;;;;;132;;deliver_sm
+786;;   некорректное кодирование SMS сообщения, которое выражено в использовании некорректного значения длины SMS сообщения;;;;;;;;;10;;deliver_sm
+787;;   0x34 = systemFailure. При этом параметр Network resources имеет значение HLR;;;;;;;;;101;;deliver_sm
+788;;LongTermDenial;;;;;;;;;;;deliver_sm
+789;;AbsentSubscriberSM;;;;;;;;;;6;deliver_sm
+790;;UnknownEquipment;;;;;;;;;;7;deliver_sm
+791;;RoamingNotAllowed;;;;;;;;;;8;deliver_sm
+792;;BearerServiceNotProvisioned;;;;;;;;;;10;deliver_sm
+793;;ForwardingViolation;;;;;;;;;;14;deliver_sm
+794;;CUG-Reject;;;;;;;;;;15;deliver_sm
+795;;IllegalSS-Operation;;;;;;;;;;16;deliver_sm
+796;;SS-ErrorStatus;;;;;;;;;;17;deliver_sm
+797;;SS-NotAvailable;;;;;;;;;;18;deliver_sm
+798;;SS-SubscriptionViolation;;;;;;;;;;19;deliver_sm
+799;;SS-Incompatibility;;;;;;;;;;20;deliver_sm
+800;;NoHandoverNumberAvailable;;;;;;;;;;25;deliver_sm
+801;;SubsequentHandoverFailure;;;;;;;;;;26;deliver_sm
+802;;IncompatibleTerminal;;;;;;;;;;28;deliver_sm
+803;;PW-RegistrationFailure;;;;;;;;;;37;deliver_sm
+804;;NegativePW-Check;;;;;;;;;;38;deliver_sm
+805;;NoRoamingNumberAvailable;;;;;;;;;;39;deliver_sm
+806;;TracingBufferFull;;;;;;;;;;40;deliver_sm
+807;;TargetCellOutsideGroupCallArea;;;;;;;;;;42;deliver_sm
+808;;NumberOfPW-AttemptsViolation;;;;;;;;;;43;deliver_sm
+809;;NumberChanged;;;;;;;;;;44;deliver_sm
+810;;BusySubscriber;;;;;;;;;;45;deliver_sm
+811;;NoSubscriberReply;;;;;;;;;;46;deliver_sm
+812;;ForwardingFailed;;;;;;;;;;47;deliver_sm
+813;;OR-NotAllowed;;;;;;;;;;48;deliver_sm
+814;;ATI-NotAllowed;;;;;;;;;;49;deliver_sm
+815;;NoGroupCallNumberAvailable;;;;;;;;;;50;deliver_sm
+816;;ResourceLimitation;;;;;;;;;;51;deliver_sm
+817;;UnauthorizedRequestingNetwork;;;;;;;;;;52;deliver_sm
+818;;UnauthorizedLCSClient;;;;;;;;;;53;deliver_sm
+819;;PositionMethodFailure;;;;;;;;;;54;deliver_sm
+820;;UnknownOrUnreachableLCSClient;;;;;;;;;;58;deliver_sm
+821;;MM-EventNotSupported;;;;;;;;;;59;deliver_sm
+822;;ATSI-NotAllowed;;;;;;;;;;60;deliver_sm
+823;;ATM-NotAllowed;;;;;;;;;;61;deliver_sm
+824;;InformationNotAvailable;;;;;;;;;;62;deliver_sm
+825;;;;;;;;;;;;;
+826;;;;;;;;;;;;;
+827;;;;;;;;;;;;;
+828;;;;;;;;;;;;;
+829;;;;;;;;;;;;;
+830;;;;;;;;;;;;;
+831;;;;;;;;;;;;;
+832;;;;;;;;;;;;;
+833;;;;;;;;;;;;;
+834;;;;;;;;;;;;;
+835;;;;;;;;;;;;;
+836;;;;;;;;;;;;;
+837;;;;;;;;;;;;;
+838;;;;;;;;;;;;;
+839;;;;;;;;;;;;;
+840;;;;;;;;;;;;;
+841;;;;;;;;;;;;;
+842;;;;;;;;;;;;;
+843;;;;;;;;;;;;;
+844;;;;;;;;;;;;;
+845;;;;;;;;;;;;;
+846;;;;;;;;;;;;;
+847;;;;;;;;;;;;;
+848;;;;;;;;;;;;;
+849;;;;;;;;;;;;;
+850;;;;;;;;;;;;;
+851;;;;;;;;;;;;;
+852;;;;;;;;;;;;;
+853;;;;;;;;;;;;;
+854;;;;;;;;;;;;;
+855;;;;;;;;;;;;;
+856;;;;;;;;;;;;;
+857;;;;;;;;;;;;;
+858;;;;;;;;;;;;;
+859;;;;;;;;;;;;;
+860;;;;;;;;;;;;;
+861;;;;;;;;;;;;;
+862;;;;;;;;;;;;;
+863;;;;;;;;;;;;;
+864;;;;;;;;;;;;;
+865;;;;;;;;;;;;;
+866;;;;;;;;;;;;;
+867;;;;;;;;;;;;;
+868;;;;;;;;;;;;;
+869;;;;;;;;;;;;;
+870;;;;;;;;;;;;;
+871;;;;;;;;;;;;;
+872;;;;;;;;;;;;;
+873;;;;;;;;;;;;;
+874;;;;;;;;;;;;;
+875;;;;;;;;;;;;;
+876;;;;;;;;;;;;;
+877;;;;;;;;;;;;;
+878;;;;;;;;;;;;;
+879;;;;;;;;;;;;;
+880;;;;;;;;;;;;;
+881;;;;;;;;;;;;;
+882;;;;;;;;;;;;;
+883;;;;;;;;;;;;;
+884;;;;;;;;;;;;;
+885;;;;;;;;;;;;;
+886;;;;;;;;;;;;;
+887;;;;;;;;;;;;;
+888;;;;;;;;;;;;;
+889;;;;;;;;;;;;;
+890;;;;;;;;;;;;;
+891;;;;;;;;;;;;;
+892;;;;;;;;;;;;;
+893;;;;;;;;;;;;;
+894;;;;;;;;;;;;;
+895;;;;;;;;;;;;;
+896;;;;;;;;;;;;;
+897;;;;;;;;;;;;;
+898;;;;;;;;;;;;;
+899;;;;;;;;;;;;;
+900;;;;;;;;;;;;;
+901;;;;;;;;;;;;;
+902;;;;;;;;;;;;;
+903;;;;;;;;;;;;;
+904;;;;;;;;;;;;;
+905;;;;;;;;;;;;;
+906;;;;;;;;;;;;;
+907;;;;;;;;;;;;;
+908;;;;;;;;;;;;;
+909;;;;;;;;;;;;;
+910;;;;;;;;;;;;;
+911;;;;;;;;;;;;;
+912;;;;;;;;;;;;;
+913;;;;;;;;;;;;;
+914;;;;;;;;;;;;;
+915;;;;;;;;;;;;;
+916;;;;;;;;;;;;;
+917;;;;;;;;;;;;;
+918;;;;;;;;;;;;;
+919;;;;;;;;;;;;;
+920;;;;;;;;;;;;;
+921;;;;;;;;;;;;;
+922;;;;;;;;;;;;;
+923;;;;;;;;;;;;;
+924;;;;;;;;;;;;;
+925;;;;;;;;;;;;;
+926;;;;;;;;;;;;;
+927;;;;;;;;;;;;;
+928;;;;;;;;;;;;;
+929;;;;;;;;;;;;;
+930;;;;;;;;;;;;;
+931;;;;;;;;;;;;;
+932;;;;;;;;;;;;;
+933;;;;;;;;;;;;;
+934;;;;;;;;;;;;;
+935;;;;;;;;;;;;;
+936;;;;;;;;;;;;;
+937;;;;;;;;;;;;;
+938;;;;;;;;;;;;;
+939;;;;;;;;;;;;;
+940;;;;;;;;;;;;;
+941;;;;;;;;;;;;;
+942;;;;;;;;;;;;;
+943;;;;;;;;;;;;;
+944;;;;;;;;;;;;;
+945;;;;;;;;;;;;;
+946;;;;;;;;;;;;;
+947;;;;;;;;;;;;;
+948;;;;;;;;;;;;;
+949;;;;;;;;;;;;;
+950;;;;;;;;;;;;;
+951;;;;;;;;;;;;;
+952;;;;;;;;;;;;;
+953;;;;;;;;;;;;;
+954;;;;;;;;;;;;;
+955;;;;;;;;;;;;;
+956;;;;;;;;;;;;;
+957;;;;;;;;;;;;;
+958;;;;;;;;;;;;;
+959;;;;;;;;;;;;;
+960;;;;;;;;;;;;;
+961;;;;;;;;;;;;;
+962;;;;;;;;;;;;;
+963;;;;;;;;;;;;;
+964;;;;;;;;;;;;;
+965;;;;;;;;;;;;;
+966;;;;;;;;;;;;;
+967;;;;;;;;;;;;;
+968;;;;;;;;;;;;;
+969;;;;;;;;;;;;;
+970;;;;;;;;;;;;;
+971;;;;;;;;;;;;;
+972;;;;;;;;;;;;;
+973;;;;;;;;;;;;;
+974;;;;;;;;;;;;;
+975;;;;;;;;;;;;;
+976;;;;;;;;;;;;;
+977;;;;;;;;;;;;;
+978;;;;;;;;;;;;;
+979;;;;;;;;;;;;;
+980;;;;;;;;;;;;;
+981;;;;;;;;;;;;;
+982;;;;;;;;;;;;;
+983;;;;;;;;;;;;;
+984;;;;;;;;;;;;;
+985;;;;;;;;;;;;;
+986;;;;;;;;;;;;;
+987;;;;;;;;;;;;;
+988;;;;;;;;;;;;;
+989;;;;;;;;;;;;;
+990;;;;;;;;;;;;;
+991;;;;;;;;;;;;;
+992;;;;;;;;;;;;;
+993;;;;;;;;;;;;;
+994;;;;;;;;;;;;;
+995;;;;;;;;;;;;;
+996;;;;;;;;;;;;;
+997;;;;;;;;;;;;;
+998;;;;;;;;;;;;;
+999;;;;;;;;;;;;;
+1000;;;;;;;;;;;;;
+1001;;;;;;;;;;;;;
+1002;;;;;;;;;;;;;
+1003;;;;;;;;;;;;;
+1004;;;;;;;;;;;;;
+1005;;;;;;;;;;;;;
+1006;;;;;;;;;;;;;
+1007;;;;;;;;;;;;;
+1008;;;;;;;;;;;;;
+1009;;;;;;;;;;;;;
+1010;;;;;;;;;;;;;
+1011;;;;;;;;;;;;;
+1012;;;;;;;;;;;;;
+1013;;;;;;;;;;;;;
